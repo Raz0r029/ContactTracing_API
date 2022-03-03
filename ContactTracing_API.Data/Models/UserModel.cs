@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ContactTracing_API.Data.Enums;
 
 namespace ContactTracing_API.Data.Models
 {
