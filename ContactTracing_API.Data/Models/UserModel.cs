@@ -31,5 +31,9 @@ namespace ContactTracing_API.Data.Models
         public string Password { get; set; }
 
         public Status Status { get; set; }
+
+        //Navigation Component
+        public int UserHealthStatusId { get; set; }
+        public UserHealthStatusModel UserHealthStatus { get; set; }
     }
 }

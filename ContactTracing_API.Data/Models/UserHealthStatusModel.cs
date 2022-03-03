@@ -13,7 +13,11 @@ namespace ContactTracing_API.Data.Models
         public int UserHealthStatusId { get; set; }
 
         public DateTime DateTime { get; set; }
+      
 
+        //Navigation Component
         public int UserId { get; set; }
+        public UserModel User { get; set; }
+
     }
 }
