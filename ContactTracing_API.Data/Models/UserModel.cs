@@ -1,9 +1,11 @@
 ﻿using ContactTracing_API.Data.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace ContactTracing_API.Data.Models
 {
     public class UserModel
     {
+        [Key]
         public int UserID { get; set; }
 
         public string FirstName { get; set; }

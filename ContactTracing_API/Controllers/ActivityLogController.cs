@@ -1,4 +1,5 @@
-﻿using ContactTracing_API.Data.Models;
+﻿using ContactTracing_API.Data;
+using ContactTracing_API.Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,11 +9,15 @@ namespace ContactTracing_API.Controllers
     [ApiController]
     public class ActivityLogController : ControllerBase
     {
-        public ActionResult AddActivityLog(ActivityLogModel activityLog) {  
-
-        
+        private readonly ContactTracingContext _context;
+        public ActivityLogController(ContactTracingContext context)
+        {
+            _context = context;
         }
-
-
+        public IActionResult AddActivityLog(ActivityLogModel activityLog)
+        {
+            _context.Add(activityLog);
+            return Ok();
+        }
     }
 }
