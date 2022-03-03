@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ContactTracing_API.Data\ContactTracing_API.Data.csproj" />
   </ItemGroup>
 
